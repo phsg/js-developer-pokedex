@@ -20,10 +20,11 @@
     <!-- Nosso CSS -->
     <link rel="stylesheet" href="/assets/css/global.css">
     <link rel="stylesheet" href="/assets/css/pokedex.css">
+    <link rel="stylesheet" href="/assets/css/pekemonDetail.css">
 </head>
 
 <body>
-    <section class="content">
+    <section id="pokemonMain" class="content">
         <h1>Pokedex</h1>
 
         <ol id="pokemonList" class="pokemons">
@@ -37,6 +38,46 @@
         </div>
     </section>
 
+    <section id="pokemonDetail" class="content" style="display: none;">
+        <div id="information">
+            <div>
+                <span class="number">#001</span>
+                <span class="name">Bulba</span>
+                <div class="detail">
+                    <ol class="types">
+                        <li class="type">type1</li>
+                        <li class="type">type1</li>
+                    </ol>
+                    <img src="${pokemon.photo}" alt="${pokemon.name}">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>About</div>
+                    <div>Base State</div>
+                    <div>Evolution</div>
+                    <div>Moves</div>
+                </div>
+                <div id="about" class="box">
+                    <div>
+                        <div>Species</div>
+                        <div>Sead</div>
+                        <div>Height</div>
+                        <div>6kg</div>
+                    </div>
+                    <div class="colspan2">
+                        <div class="colspan1">Height</div>
+                        <div class="colspan1">32</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pagination">
+            <button id="returnButton" type="button">
+                Voltar
+            </button>
+        </div>
+    </section>
     <!-- Nosso JS -->
     <script src="/assets/js/pokemon-model.js"></script>
     <script src="/assets/js/poke-api.js"></script>

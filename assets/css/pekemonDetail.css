@@ -1,0 +1,17 @@
+.pokemon .showDetailButton {
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: .7rem;
+    color: #fff;
+    background-color: #04071b;
+    border: none;
+    border-radius: 1rem;
+}
+
+.pokemonDetail {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
